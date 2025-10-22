@@ -1,0 +1,4 @@
+mkdir build && cd build
+cmake ..
+make  # 或在Windows上用cmake --build .
+./GameMain  # 运行程序
