@@ -11,6 +11,7 @@ include_directories(${PROJECT_SOURCE_DIR})
 file(GLOB CARD_SOURCES "cardsystem/*.cpp")
 file(GLOB ROLE_SOURCES "RoleSystem/*.cpp")
 file(GLOB DIFFICULTY_SOURCES "Difficulty.cpp")  # 添加Difficulty源文件
+file(GLOB AI_SOURCES "AISystem/*.cpp")  # 添加AISystem模块
 
 # 生成可执行文件，包含所有模块源文件
 add_executable(GameMain 
@@ -18,6 +19,7 @@ add_executable(GameMain
     ${CARD_SOURCES} 
     ${ROLE_SOURCES} 
     ${DIFFICULTY_SOURCES}  # 引入Difficulty模块
+    ${AI_SOURCES}          # 引入AISystem模块
 )
 
 # 编译选项
